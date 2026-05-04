@@ -31,6 +31,6 @@
     "typescript": "^5"
   },
   "overrides": {
-    "zod-to-json-schema": "3.23.3"
+    "zod-to-json-schema": "3.24.5"
   }
 }
