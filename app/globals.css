@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --f1-red: #e10600;
+  --f1-dark: #0a0a0a;
+  --f1-gray: #1a1a1a;
+}
+
+body {
+  background-color: var(--f1-dark);
+  color: white;
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(225, 6, 0, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(225, 6, 0, 0); }
+}
+
+.pulse-red {
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slide-up 0.4s ease-out forwards;
+}
+
+.tire-soft { background: #ff3333; }
+.tire-medium { background: #ffd700; color: #000; }
+.tire-hard { background: #e8e8e8; color: #000; }
+.tire-inter { background: #00aa44; }
+.tire-wet { background: #0044ff; }
